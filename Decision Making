@@ -1,0 +1,120 @@
+#Greatest of two numbers
+a=int(input())
+b=int(input())
+if a==b:
+    print(a,"is equal to",b)
+elif a>b:
+    print(a,"is greater than",b)
+else:
+    print(a,"is less than",b)
+    
+#Vowels or Constants
+character = input()
+vow = "aeiouAEIOU"
+if (character>='A' and character<='z') or (character>='a' and character<='z'):
+    if character in vow :
+        print('vowel')
+    else:
+        print('consonant')
+else:
+    print('not an alphabet')
+    
+#Grading System
+a=int(input())
+if a==100 :
+    print('S')
+elif a<100 and a>=90 :
+    print('A')
+elif a<90 and a>=80 :
+    print('B')
+elif a<80 and a>=70 :
+    print('C')
+elif a<70 and a>=60 :
+    print('D')
+elif a<60 and a>=50 :
+    print('E')
+elif a<50 :
+    print('F')
+elif a>100 :
+    print('invalid input')
+    
+#Profit or Loss
+X=float(input("Enter the price of a dozen mangoes\n"))
+Y=float(input("Enter the price at which 1 mango is being sold\n"))
+output=((Y*12)-X)
+if output==0:
+    print("no profit nor loss")
+elif output>0 :
+    print("profit : Rs.""%.2f"%(-output))
+else:
+    print("loss : Rs.""%.2f"%(-output))
+    
+#Fee collection
+x=str(input('enter the student type\n'))
+if x=="MSDS":
+    TF=float(input('Enter tuition fee\n'))
+    BF=float(input('Enter bus fee\n'))
+    AP=(TF+BF)
+    print('the fees to be paid by the student is Rs.\n',"%.2f"%AP)
+elif x=="MSH":
+     TF=float(input('Enter tuition fee\n'))
+     HF=float(input('Enter hostel fee\n'))
+     AP=(TF+HF)
+     print('the fees to be paid by the student is Rs.\n',"%.2f"%AP)
+elif x=="MGSD":
+     TF=float(input('Enter tuition fee\n'))
+     BF=float(input('Enter bus fee\n'))
+     AP=((1.5*TF)+BF)
+     print('the fees to be paid by the student is Rs.\n',"%.2f"%AP)
+elif x=="MGSH":
+    TF=float(input('Enter tuition fee\n'))
+    HF=float(input('Enter hostel fee\n'))
+    AP=((1.5*TF)+HF)
+    print('the fees to be paid by the student is Rs.\n',"%.2f"%AP)
+    
+ #Y2K problem detector
+ by=int(input("enter year of birth\n"))
+cy=int(input("enter current year\n"))
+if by>cy :
+    print("your age is",(100+cy)-by)
+else :
+    print("your age is",cy-by)
+    
+#Hotel tariff calculator
+x=int(input())
+y=float(input())
+z=int(input())
+a=((0.2*y)+y)*z
+b=y*z
+if x>=4 and x<=6 :
+    print(f"Hotel Tariff:Rs.{'%.2f'%a}")
+elif x>=11 and x<=12:
+    print(f"Hotel Tariff:Rs.{'%.2f'%a}")
+elif x>=1 and x<=3:
+    print(f"Hotel Tariff:Rs.{'%.2f'%b}")
+elif x>=7 and x<=10:
+    print(f"Hotel Tariff:Rs.{'%.2f'%b}")
+else:
+    print("invalid input")
+    
+ #RGY lights
+ s=float(input())
+d=float(input())
+t=float(input())
+if s>=t:
+    print("yes")
+else:
+    print("no")
+    
+#Budget
+A=int(input())
+B=int(input())
+C=int(input())
+D=int(input())
+E=int(input())
+TC=15000
+RC=float((A*350.34)+(B*230.90)+(C*190.55)+(D*125.30)+(E*180.90))
+if RC<=TC:
+    print("yes")
+else:
+    print("no")
