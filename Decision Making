@@ -118,3 +118,33 @@ if RC<=TC:
     print("yes")
 else:
     print("no")
+    
+#Intersection of circle
+x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+d=(((x1-x2)**2)+((y1-y2)**2)**(1/2))
+if(r1+r2)==d:
+    print("The circles are tangential")
+elif (r1+r2)<d:
+    print("The circles do not overlap")
+elif (r1+r2)>d:
+    print("The circles overlap")
+    
+#Microwave oven
+n=int(input("Enter the number of items\n"))
+t=float(input("Enter the single item heating time\n"))
+text="The recommended heating time is"
+if n==1:
+    print(text,"%.2f"%(t))
+elif n==2:
+    a=(1.5)*t
+    print(text,"%.2f"%(a))
+elif n==3:
+    b=2*t
+    print(text,"%.2f"%(b))
+else :
+    print("number of items is more")
