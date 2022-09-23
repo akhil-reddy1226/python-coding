@@ -1,0 +1,11 @@
+#Square root
+def sqr(x):
+    print(x**2)
+a=int(input())
+sqr(a)
+
+#cube root
+def cube(x):
+    print(x**3)
+a=int(input())
+cube(a)
